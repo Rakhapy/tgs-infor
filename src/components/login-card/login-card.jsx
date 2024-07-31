@@ -9,6 +9,7 @@ const Logcard = () => {
             <div className="input-login">
                 <input type="text" placeholder="Username" />
                 <input type="password" placeholder="Password" />
+                <button>Login</button>
             </div>
         </div>
         </>
