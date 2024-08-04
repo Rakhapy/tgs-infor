@@ -5,8 +5,7 @@ import Register from "./components/login-card/register-card/"
 const Home = () => {
   return(
     <>
-    <Logcard/>
-    <Register/>
+    <Logcard judul="Aku" />
     </>
   )
 }
