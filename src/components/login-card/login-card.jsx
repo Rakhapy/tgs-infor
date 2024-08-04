@@ -11,7 +11,6 @@ const Logcard = () => {
                 <input type="password" placeholder="Password" />
                 <button>Login</button>
             </div>
-            <h1>Halo</h1>
         </div>
         </>
     )
