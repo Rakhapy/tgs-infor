@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     element: <Register/>
   },
   {
-    path: "navbar",
+    path: "/navbar",
     element: <Navbar/>,
   }
 ])
