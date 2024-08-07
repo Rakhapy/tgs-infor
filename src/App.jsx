@@ -1,10 +1,16 @@
 import "./App.css"
+import { Link } from "react-router-dom"
 
 const Home = () => {
   return(
-    <>
-    <h1>Hello World</h1>
-    </>
+    <div>
+    <div className="button flex gap-4">
+    <button className="btn bg-blue-500 font-medium rounded p-1 hover:p-1.5 duration-300" ><Link to="/about">About</Link></button>
+    <button className="btn bg-blue-500 font-medium rounded p-1 hover:p-1.5 duration-300" ><Link to="/login">Login</Link></button>
+    <button className="btn bg-blue-500 font-medium rounded p-1 hover:p-1.5 duration-300" ><Link to="/register">Register</Link></button>
+    </div>
+
+    </div>
   )
 }
 
