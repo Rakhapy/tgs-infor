@@ -5,7 +5,7 @@
             "dest": "/"
         },
         {
-            "src": "/auth",
+            "src": "/navbar",
             "dest": "/"
         }
     ]
