@@ -7,6 +7,18 @@
         {
             "src": "/navbar",
             "dest": "/"
+        },
+        {
+            "src": "/register",
+            "dest": "/"
+        },
+        {
+            "src": "/login",
+            "dest": "/"
+        },
+        {
+            "src": "/about",
+            "dest": "/"
         }
     ]
 }
