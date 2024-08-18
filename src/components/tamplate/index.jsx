@@ -1,0 +1,27 @@
+import React from "react"
+import { Link } from "react-router-dom"
+
+const Tamplate = () => {
+    return (
+        <>
+        {/* div utama */}
+        <div className="main bg-slate-100">
+          {/* wrapper div judul */}
+          <div className="main-hero bg-slate-300 flex justify-center items-center max-h-[30rem] max-w-full gap-3 flex-col p-[4rem]">
+        <div className="judul">
+          <h1 className="text-3xl font-bold" >Im Rakha</h1>
+        </div>
+        <div className="subjudul">
+          <h2 className="text-base" >Nama saya adalah Rakha</h2>
+        </div>
+        <div className="login-register-btn flex gap-4 flex-wrap max-h-32">
+          <button className="btn bg-blue-500 font-medium rounded py-1.5 px-3 hover:px-3.5 duration-300" ><Link to="/login">Login</Link></button>
+          <button className="btn bg-transparent border-2 text-blue-500 border-blue-500 font-medium rounded py-1.5 px-3 hover:px-3.5 hover:text-white duration-300" ><Link to="/register">Register</Link></button>
+        </div>
+          </div>
+      </div>
+        </>
+    )
+}
+
+export default Tamplate
