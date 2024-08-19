@@ -7,7 +7,7 @@ const Tamplate = () => {
         {/* div utama */}
         <div className="main bg-slate-100">
           {/* wrapper div judul */}
-          <div className="main-hero bg-slate-300 flex justify-center items-center max-h-[30rem] max-w-full gap-3 flex-col p-[4rem]">
+          <div className="main-hero bg-[#393939] flex justify-center items-center max-h-[30rem] max-w-full gap-3 flex-col p-[4rem]">
         <div className="judul">
           <h1 className="text-3xl font-bold" >Im Rakha</h1>
         </div>
