@@ -1,5 +1,8 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import { Datkes } from "../../components/datkes/index.jsx"
+import Card from "../../components/card/index.jsx"
+
 
 const Tamplate = () => {
     return (
@@ -20,6 +23,7 @@ const Tamplate = () => {
         </div>
           </div>
       </div>
+      <Card/>
         </>
     )
 }

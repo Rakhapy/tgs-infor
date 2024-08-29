@@ -28,10 +28,6 @@ const router = createBrowserRouter([
   {
     path: "/navbar",
     element: <Navbar/>,
-  },
-  {
-    path: "/datkes",
-    element: <Datkes/>
   }
 ])
 
