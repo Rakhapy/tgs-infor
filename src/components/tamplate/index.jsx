@@ -14,7 +14,7 @@ const Tamplate = () => {
           <h1 className="text-3xl font-bold select-none " >🆁🅺 Store</h1>
         </div>
         <div className="subjudul">
-          <h2 className="text-base select-none" >Shop For All Your Needs</h2>
+          <h2 className="text-base select-none" >LISA BLACK PINK PERNAH BELI DISINI</h2>
         </div>
         <div className="login-register-btn flex gap-4 flex-wrap max-h-32">
           <button className="btn bg-blue-500 font-medium rounded py-1.5 px-3 hover:px-3.5 duration-300" ><Link to="/login">Login</Link></button>
