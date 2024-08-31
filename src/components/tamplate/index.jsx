@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { Datkes } from "../../components/datkes/index.jsx"
 import Card from "../../components/card/index.jsx"
+import Basket from "../basket/index.jsx"
 
 
 const Tamplate = () => {
@@ -23,6 +22,7 @@ const Tamplate = () => {
         </div>
           </div>
       </div>
+      <Basket></Basket>
       <Card/>
         </>
     )
