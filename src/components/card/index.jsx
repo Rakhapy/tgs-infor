@@ -12,20 +12,19 @@ useEffect(() => {
 },[])
 return(
     <>
-    <h1 className="text-2xl m-4 font-bold">Daftar Menu</h1>
+    <h1 className="text-2xl m-4 font-bold">Pruducts</h1>
         <div className="flex items-center justify-center flex-wrap my-11">
     {product.length > 0 ? product.map((product) => (
-        <div className="bg-[#202020] border-2 shadow-xl border-[#181818] w-[20rem] h-fit p-2 m-2 mx-4 rounded-md">
-            <img className="h-[15rem]" src={product.foto} alt="" />
+        <div className="bg-[#202020] border-2 shadow-xl border-[#181818] w-[20rem] h-fit p-2 pb-4 m-2 mx-4 rounded-md">
+            <img className="h-[15rem] mx-auto rounded-sm my-2" src={product.foto} alt="" />
             <div className="pl-2">
-        <h1 className="text-2xl font-bold">{product.nama}</h1>
-        <h2>Energi: {product.Energi}</h2>
-        <h2>Protein: {product.Protein}</h2>
-        <h2>Lemak: {product.Lemak}</h2>
-        <h2>Karbo: {product.karbo}</h2>
-        <h2>Harga: Rp.{product.harga}</h2>
+        <h1 className="text-2xl font-bold">🆁🅺 {product.nama}</h1>
+        <div className="deskripsi flex flex-wrap mt-2 ">
+            <h2>𝐿𝑖𝑚𝑖𝑡𝑒𝑑</h2>
+        </div>
+        <h2 className="mt-4 text-lg" ><b>Rp.{product.harga}</b></h2>
         <div className="button flex pt-4 gap-4 ">
-            <button className="bg-blue-500 px-4 w-auto h-auto text-lg font-semibold shadow-sm rounded duration-200 hover:bg-blue-700">Beli</button>
+            <button className="bg-blue-500 px-4 w-auto h-auto text-lg font-semibold shadow-sm rounded duration-200 hover:bg-blue-700">Lihat</button>
             <button className="bg-transparent border-2 border-blue-500 px-4 w-auto h-auto text-lg font-semibold shadow-sm rounded duration-200 hover:bg-blue-500 " onClick={() => {
                 setCart(cart + 1)
                 console.log(cart)

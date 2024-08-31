@@ -3,7 +3,14 @@ export default {
   content: ["./index.html",
     "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        "inter": ['Inter', 'sans-serif'],
+        "nunito": ['Nunito', 'sans-serif'],
+        "lexend": ['Lexend', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

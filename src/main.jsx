@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Register from './components/auth/register/'
 import Login from './components/auth/login/index.jsx'
 import Navbar from './components/navbar/index.jsx'
+import Datakes from './components/datakes/fragment/index.jsx'
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/navbar",
     element: <Navbar/>,
+  },
+  {
+    path: "/data-kesehatan",
+    element: <Datakes/>
   }
 ])
 
