@@ -6,12 +6,12 @@ const Navbar = () => {
             <h1 className="text-2xl font-bold" ><a href="">🆁🅺</a></h1>
             </div>
             <div className="ul-navbar flex flex-row justify-center items-center">
-                <ul className="flex font-semibold font-lexend justify-center items-center gap-4">
+                <ul className="max-sm:hidden flex font-semibold font-lexend justify-center items-center gap-4">
                     <li><a href="/data-kesehatan">Data Kesehatan</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="https://www.instagram.com/rakhaprawira_y">Social Media</a></li>
                 </ul>
-            <div className="menu mx-4 w-[1rem] ">
+            <div className="md:hidden  menu mx-4 w-[1rem] ">
                 <img src="img/menu.png" alt="" />
             </div>
             </div>
