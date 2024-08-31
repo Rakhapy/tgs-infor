@@ -11,6 +11,9 @@ const Navbar = () => {
                     <li><a href="/about">About</a></li>
                     <li><a href="https://www.instagram.com/rakhaprawira_y">Social Media</a></li>
                 </ul>
+            <div className="menu w-[1rem] ">
+                <img src="img/menu.png" alt="" />
+            </div>
             </div>
         </nav>
         </>
