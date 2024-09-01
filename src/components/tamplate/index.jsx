@@ -22,10 +22,10 @@ const Tamplate = () => {
         </div>
           </div>
       </div>
-      <Modal></Modal>
+      <Modal/>
       <Basket></Basket>
       <Card/>
-        </>
+      </>
     )
 }
 
