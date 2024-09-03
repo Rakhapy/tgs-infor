@@ -1,25 +1,29 @@
 import { useState, useEffect } from "react"
 import { Datkes } from "../datkes"
+import Modal from "../modal";
+
 const Card = () => {
 
 const [product, setProduct] = useState([]);
 const [open, setOpen] = useState(false);
 
-const openmodal = () => {
+function openmodal() {
     setOpen(!open)
 }
 
 useEffect(() => {
     Datkes((data) => {
-        setProduct(data)
+    setProduct(data)
     })
 },[])
+
 return(
     <>
+    <Modal open={open} close={() => setOpen(!open)} product={product} />
     <h1 className="text-2xl m-4 font-bold">Pruducts</h1>
         <div className="flex items-center justify-center flex-wrap my-11">
     {product.length > 0 ? product.map((product) => (
-        <div className="bg-[#202020] border-2 shadow-xl border-[#181818] w-[20rem] h-fit p-2 pb-4 m-2 mx-4 rounded-md">
+        <div key={product.id} className="bg-[#202020] border-2 shadow-xl border-[#181818] w-[20rem] h-fit p-2 pb-4 m-2 mx-4 rounded-md">
             <img className="h-[15rem] mx-auto rounded-sm my-2" src={product.foto} alt="" />
             <div className="pl-2">
         <h1 className="text-2xl font-bold">🆁🅺 {product.nama}</h1>
@@ -44,8 +48,7 @@ return(
     </div>
     </>
 )
-
-
-
 }
+
+
 export default Card

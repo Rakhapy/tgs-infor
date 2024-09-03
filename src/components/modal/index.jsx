@@ -1,12 +1,15 @@
-const Modal = () => {
-    if (false) 
+
+const Modal = ({open, close, product}) => {
+
+    if (!open) return null
+
     return(
         <>
         <div className="modal inset-0 fixed backdrop-blur-sm flex justify-center items-center">
             <div className="container flex bg-[#202020] w-[25rem] h-[35rem] flex-col rounded-lg overflow-auto no-scrollbar ">
                 <div className="top flex justify-between items-center m-5 font-lexend">
                     <h1 className="font-semibold text-xl " >🆁🅺 Store</h1>
-                    <h2 className="font-light cursor-pointer" onClick={() => alert("Beli dulu baru bisa balik")} >Back</h2>
+                    <h2 className="font-light cursor-pointer" onClick={close} >Back</h2>
                 </div>
                 <div className="img bg-gradient-to-br from-purple-800 to-pink-500 flex justify-center flex-col font-bold ">
                     <div className="text-xl flex justify-center items-center p-3" >
@@ -18,7 +21,7 @@ const Modal = () => {
                 </div>
                 <div className="detail">
                     <div className="judul text-xl m-3 font">
-                        <h1>🆁🅺 Lift GS</h1>
+                        <h1>{product.id}</h1>
                     </div>
                     <div className="deskripsi mx-3 ">
                         <p>

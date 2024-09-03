@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom"
 import Card from "../../components/card/index.jsx"
 import Basket from "../basket/index.jsx"
-import Modal from "../modal"
 
 const Tamplate = () => {
     return (
-        <>
+        <div className="overflow-auto no-scrollbar">
         {/* div utama */}
         <div className="main bg-slate-100">
           {/* wrapper div judul */}
@@ -22,10 +21,9 @@ const Tamplate = () => {
         </div>
           </div>
       </div>
-      <Modal/>
       <Basket></Basket>
       <Card/>
-      </>
+      </div>
     )
 }
 
