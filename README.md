@@ -1,8 +1,34 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# RK Store
 
-Currently, two official plugins are available:
+A shop that sells rare and limited goods
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Features
+
+- Light and fast
+- Using the latest technology (NextJs 14)
+- Fullscreen mode
+- Cross platform
+
+
+## Tech Stack
+
+**Client:** React, NextJs, Redux, TailwindCSS
+
+**Server:** Node, Vercel, Express
+
+
+## Optimizations
+
+What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+
+
+## Authors
+
+- [@Rakhapy](https://www.github.com/Rakhapy)
+
+
+## Support
+
+For support or help, email rakhapy@gmail.com or join our Discord channel.
