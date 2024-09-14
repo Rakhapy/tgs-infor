@@ -2,7 +2,7 @@ import Layout from "../layout"
 
 const Login = () => {
     return(
-        <Layout type="login" />
+        <Layout type="login"></Layout>
     )
 }
 

@@ -32,7 +32,7 @@ const Modal = ({open, close, product}) => {
                         <h1><b>Rp. 100.000</b></h1>
                     </div>
                     <div className="tombol">
-                    <button className="bg-transparent border-2 border-blue-500 px-4 w-auto h-auto text-lg font-semibold shadow-sm rounded duration-200 hover:bg-blue-500 " >Add to cart</button>
+                    <button className="bg-transparent border-2 border-blue-500 px-4 w-auto h-auto text-lg font-semibold shadow-sm rounded duration-200 mb-5 hover:bg-blue-500 " >Add to cart</button>
                     </div>
                 </div>
                 
