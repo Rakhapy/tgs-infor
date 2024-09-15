@@ -1,4 +1,5 @@
 const Navbar = () => {
+    const email = localStorage.getItem("username");
     return(
         <>
         <nav className="flex bg-[#1b1b1b] justify-between items-center p-2" >
@@ -6,6 +7,7 @@ const Navbar = () => {
             <h1 className="text-2xl font-bold" ><a href="">🆁🅺</a></h1>
             </div>
             <div className="ul-navbar flex flex-row justify-center items-center">
+                <h3 className="font-normal mr-6" >{email}</h3>
                 <ul className="max-md:hidden flex font-semibold font-lexend justify-center items-center gap-4">
                     <li><a href="/data-kesehatan">Data Kesehatan</a></li>
                     <li><a href="/about">About</a></li>
