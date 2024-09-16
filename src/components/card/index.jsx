@@ -17,7 +17,6 @@ useEffect(() => {
 function openmodal(isi) {
     setOpen(!open)
     setDetail(isi);
-    console.log(isi);
 }
 
 return(

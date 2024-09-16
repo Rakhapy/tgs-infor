@@ -11,7 +11,7 @@ const Navbar = () => {
                 <ul className="max-md:hidden flex font-semibold font-lexend justify-center items-center gap-4">
                     <li><a href="/data-kesehatan">Data Kesehatan</a></li>
                     <li><a href="/about">About</a></li>
-                    <li><a href="https://www.instagram.com/rakhaprawira_y">Social Media</a></li>
+                    <li><a href="/medsos">Social Media</a></li>
                 </ul>
             <div className="md:hidden  menu mx-4 w-[1rem] ">
                 <img src="img/menu.png" alt="" />

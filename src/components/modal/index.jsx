@@ -16,12 +16,12 @@ const Modal = ({open, close, product}) => {
                         <h1>Limited Edition</h1>
                     </div>
                     <div>
-                        <img src="https://i.pinimg.com/564x/cd/0a/f7/cd0af7dd8375502b13041573192eaf19.jpg" alt="" />
+                        <img src={product.foto} alt="" />
                     </div>
                 </div>
                 <div className="detail">
                     <div className="judul text-xl m-3 font">
-                        <h1>{product.id}</h1>
+                        <h1>{product.nama}</h1>
                     </div>
                     <div className="deskripsi mx-3 ">
                         <p>
@@ -29,7 +29,7 @@ const Modal = ({open, close, product}) => {
                         </p>
                     </div>
                     <div className="harga mx-4 my-3 text-lg ">
-                        <h1><b>Rp. 100.000</b></h1>
+                        <h1><b>{product.harga}</b></h1>
                     </div>
                     <div className="tombol">
                     <button className="bg-transparent border-2 border-blue-500 px-4 w-auto h-auto text-lg font-semibold shadow-sm rounded duration-200 mb-5 hover:bg-blue-500 " >Add to cart</button>

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import About from './components/about/index.jsx'
@@ -8,6 +8,8 @@ import Register from './components/auth/register/'
 import Login from './components/auth/login/index.jsx'
 import Navbar from './components/navbar/index.jsx'
 import Datakes from './components/datakes/fragment/index.jsx'
+import Medsos from './medsos/component/medsos/index.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/data-kesehatan",
     element: <Datakes/>
+  },
+  {
+    path: "/medsos",
+    element: <Medsos/>,
   }
 ])
 
