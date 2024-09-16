@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import Card from "../../components/card/index.jsx"
 import Basket from "../basket/index.jsx"
+const user = localStorage.getItem("username");
 
 const Tamplate = () => {
     return (
@@ -15,10 +16,12 @@ const Tamplate = () => {
         <div className="subjudul">
           <h2 className="text-base select-none" >All you need in one place</h2>
         </div>
+        {user == null ? (
         <div className="login-register-btn flex gap-4 flex-wrap max-h-32">
           <button className="btn bg-blue-500 font-medium rounded py-1.5 px-3 hover:px-3.5 duration-300" ><Link to="/login">Login</Link></button>
           <button className="btn bg-transparent border-2 text-blue-500 border-blue-500 font-medium rounded py-1.5 px-3 hover:px-3.5 hover:text-white duration-300" ><Link to="/register">Register</Link></button>
         </div>
+        ) : null}
           </div>
       </div>
       <Basket></Basket>
