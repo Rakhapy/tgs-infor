@@ -16,16 +16,12 @@ useEffect(() => {
     setProduct(data)
     })
 },[])
-<<<<<<< HEAD
 
 function openmodal(isi) {
     setOpen(!open)
     setDetail(isi);
 }
 
-=======
-console.log(product);
->>>>>>> parent of 5decca0 (buat medsos fitur)
 return(
     <>
     <Modal open={open} close={() => setOpen(!open)} product={product} />
