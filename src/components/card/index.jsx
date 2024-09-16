@@ -16,7 +16,7 @@ useEffect(() => {
     setProduct(data)
     })
 },[])
-
+console.log(product);
 return(
     <>
     <Modal open={open} close={() => setOpen(!open)} product={product} />
