@@ -6,22 +6,29 @@ const Card = () => {
 
 const [product, setProduct] = useState([]);
 const [open, setOpen] = useState(false);
-const [detail, setDetail] = useState([]);
+
+function openmodal() {
+    setOpen(!open)
+}
 
 useEffect(() => {
     Datkes((data) => {
-        setProduct(data)
+    setProduct(data)
     })
 },[])
+<<<<<<< HEAD
 
 function openmodal(isi) {
     setOpen(!open)
     setDetail(isi);
 }
 
+=======
+console.log(product);
+>>>>>>> parent of 5decca0 (buat medsos fitur)
 return(
     <>
-    <Modal open={open} close={() => setOpen(!open)} product={detail} />
+    <Modal open={open} close={() => setOpen(!open)} product={product} />
     <h1 className="text-2xl m-4 font-bold">Pruducts</h1>
         <div className="flex items-center justify-center flex-wrap my-11">
     {product.length > 0 ? product.map((product) => (
@@ -34,7 +41,7 @@ return(
         </div>
         <h2 className="mt-4 text-lg" ><b>Rp.{product.harga}</b></h2>
         <div className="button flex pt-4 gap-4 ">
-            <button onClick={() => openmodal(product)} className="bg-blue-500 px-4 w-auto h-auto text-lg font-semibold shadow-sm rounded duration-200 hover:bg-blue-700">Lihat</button>
+            <button onClick={openmodal} className="bg-blue-500 px-4 w-auto h-auto text-lg font-semibold shadow-sm rounded duration-200 hover:bg-blue-700">Lihat</button>
             <button className="bg-transparent border-2 border-blue-500 px-4 w-auto h-auto text-lg font-semibold shadow-sm rounded duration-200 hover:bg-blue-500 ">Add to cart</button>
         </div>
             </div>
